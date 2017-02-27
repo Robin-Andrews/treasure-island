@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<title>Treasure Island</title>
+	<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<div id="gameArea">
+		<div id="info">
+			<h1>Welcome to Treasure Island</h1>
+			Click the crosses to dig for treasure. Numbers tell you how far off you are.
+			Think Pythagoras if you know about his theorem.<br>
+		</div><!-- info -->
+
+		<div id="island">
+		
+			<div id="youWon"></div>
+
+			<div id="tries">
+				Tries: <span id="triesNum">0</span>
+			</div>
+			
+			<img height="100" id="tree-1" src="images/tree-100x100.png" width="100">
+			<img height="100" id="tree-2" src="images/tree-100x100.png" width="100">
+
+			<div id="crosses"></div><!--crosses-->
+			
+			<button id="reset">Reset</button>
+			
+		</div><!--island-->
+		
+	</div><!--gameArea-->
+	
+	<audio id="successSound" src="audio/treasure-found.mp3"></audio>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+	<script src="js/main.js"></script>
+</body>
+</html>
